@@ -17,7 +17,7 @@ export default function Header(props) {
         <Link href='/'>
           {/* 可使用一张单图作为logo */}
           <div className='flex space-x-6 justify-center'>
-            <div className='hover:rotate-45 hover:scale-125 transform duration-200 cursor-pointer justify-center items-center flex'>
+            <div className='hover:scale-125 transform duration-200 cursor-pointer justify-center items-center flex'>
               <LazyImage
                 priority={true}
                 src={siteInfo?.icon}
@@ -29,7 +29,7 @@ export default function Header(props) {
             </div>
 
             <div className='flex-col flex justify-center'>
-              <div className='text-2xl font-serif dark:text-white py-2 hover:scale-105 transform duration-200'>
+              <div className='text-2xl font-serif dark:text-white py-2 hover:scale-105 transform duration-200 text-left'>
                 {siteConfig('AUTHOR')}
               </div>
               <div
